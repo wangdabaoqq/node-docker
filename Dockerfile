@@ -1,14 +1,14 @@
-FROM node:0.12.7-wheezy
+FROM node:6.12.7-wheezy
 
-WORKDIR /app
+WORKDIR /nodeExpress
 
 RUN npm install -g forever
 
-COPY ./package.json /app/
+COPY ./package.json /nodeExpress/
 
 RUN npm install
 
-COPY . /app/
+COPY . /nodeExpress/
  
 EXPOSE 3000
 
