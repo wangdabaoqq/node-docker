@@ -1,4 +1,4 @@
-FROM node:6.12.7-wheezy
+FROM node:6.10.3
 
 WORKDIR /nodeExpress
 
